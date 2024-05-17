@@ -7,7 +7,7 @@ use App\Http\controllers\CourseController;
 use App\Http\controllers\BatchController;
 use App\Http\controllers\EnrollmentController;
 use App\Http\controllers\PaymentController;
-
+use App\Http\controllers\ReportController;
 
 
 Route::get('/', function () {
@@ -22,4 +22,6 @@ Route::resource('/batches', BatchController::class);
 Route::resource('/entollments', EnrollmentController::class);
 Route::resource('/payments', PaymentController::class);
 
-Route::get('report/report1/{pid}', [ReportController::class, 'report1']);
+Route::get('/report/report1/{pid}', [ReportController::class, 'report1']);
+
+Route::get('/hom', [BatchController::class,'hom']);

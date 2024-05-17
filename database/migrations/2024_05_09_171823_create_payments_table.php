@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('enrollment_id');
+            $table->string('enrollment_id');
             $table->date('paid_date');
             $table->double('amount');
             $table->timestamps();
-        
-            $table->foreign('course_id')->references('id')->on('courses')->onDelete('cascade');
+            
+           
         });
     }
 

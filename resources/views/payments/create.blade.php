@@ -7,7 +7,7 @@
       
       <form action="{{ url('payments') }}" method="post">
         {!! csrf_field() !!}
-        <label>Enrollment Name</label></br>
+        <label>Enroll_no</label></br>
 
         <select name="enrollment_id" id="enrollment_id" class="form-control">
         @foreach($entollments as $id=> $enroll_no)

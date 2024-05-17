@@ -16,7 +16,7 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Enrollment</th>
+                                        <th>Enrollment no</th>
                                         <th>Paid Date</th>
                                         <th>Amount</th>
                                         <th>Actions</th>
@@ -26,7 +26,7 @@
                                 @foreach($payments as $item)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $item->entollment->enroll_no }}</td>
+                                        <td>{{ $item->enrollment_id }}</td>
                                         <td>{{ $item->paid_date }}</td>
                                         <td>{{ $item->amount }}</td>
  
